@@ -18,7 +18,7 @@ First clone the repository:
 ```
 git clone https://github.com/Swawon/n2c.git
 cd n2c
-crewai run #This command will create the python environment.
+crewai run #This command will create the python environment so ignore any errors.
 ```
 Then run these commands to install system-wide:
 ```
@@ -35,6 +35,10 @@ Create or Update the configuration file at /usr/share/n2c/.env with these conten
 ```
 MODEL=gemini/gemini-1.5-pro
 GEMINI_API_KEY=your_gemini_api_key_here
+```
+A gemini API key can be generated from here.
+```
+https://ai.google.dev/gemini-api/docs/api-key
 ```
 ## 🎛️ Model Switching
 To use OpenAI and Other LLM model instead gemini, edit the .env file to contain:
