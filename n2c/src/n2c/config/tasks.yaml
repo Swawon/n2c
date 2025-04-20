@@ -1,0 +1,29 @@
+CommandTranslationTask:
+  description: >
+    Convert this user request into a single valid Linux terminal command:
+    
+    USER REQUEST: "{user_request}"
+    
+    Instructions:
+    1. Return ONLY the final raw command.
+    2. Prefer safe, POSIX-compliant syntax.
+    3. Include necessary flags and options.
+    4. No natural language explanations or comments in the output.
+  expected_output: >
+    A single Linux command string with no additional text.
+  agent: LinuxExpertAgent
+
+CommandValidation:
+  description: >
+    Analyze the command and determine if it's potentially harmful. Also provide a short explanation. If it is safe don't need to inform about security.
+    
+    If harmful: `⚠️ Caution: [reason] [short explanation and working of the command and its options]`
+    If safe: `[short explanation and working of the command and its options, don't need to inform about security]`
+
+  expected_output: >
+    If harmful: `⚠️ Caution: [reason] [short explanation and working of the command and its options]`
+    If safe: `[short explanation and working of command and its options, don't need to inform about security]`
+  agent: LinuxCommandValidator
+  context:
+    - CommandTranslationTask
+

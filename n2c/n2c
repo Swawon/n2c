@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Absolute path to the project directory
+PROJECT_DIR="/usr/share/n2c"
+
+# Use Python from the virtual environment
+VENV_PYTHON="$PROJECT_DIR/.venv/bin/python"
+
+# Activate the virtual environment (if needed for env vars or PATH)
+source "$PROJECT_DIR/.venv/bin/activate"
+
+# Set PYTHONPATH to include src/
+export PYTHONPATH="$PROJECT_DIR/src"
+
+# Run the app using venv Python
+exec "$VENV_PYTHON" "$PROJECT_DIR/src/n2c/main.py" "$@"
