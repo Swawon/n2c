@@ -7,7 +7,7 @@ n2c is a command-line tool powered by Gemini (Google AI) that translates your ev
 ✅ Translate natural language to Linux commands
 ✅ Validate and warn about dangerous commands
 ✅ Edit commands before execution
-✅ Works offline after setup
+✅ LLM model switching
 ✅ Default model: Gemini 1.5 Pro
 
 ## 📦 Installation
