@@ -23,4 +23,31 @@ Transform plain English into safe, precise Linux commands with AI!
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/n2c.git
+git clone https://github.com/Swawon/n2c.git
+
+
+### 📁 Move Files to System Directories
+
+```bash
+# Move the entire project to /usr/share
+sudo mv n2c /usr/share/n2c
+
+# Copy the launcher script to /usr/local/bin
+sudo cp /usr/share/n2c/n2c.bash /usr/local/bin/n2c
+
+# Make it executable
+sudo chmod +x /usr/local/bin/n2c
+
+Now, you can use n2c from anywhere in the terminal:
+n2c "list all files in the current directory"
+
+###🔐 API Setup
+The .env file should be located in the /usr/share/n2c/ directory.
+
+Its contents should look like this:
+
+```env
+Copy
+Edit
+MODEL=gemini/gemini-1.5-pro
+GEMINI_API_KEY=your_gemini_api_key_here
