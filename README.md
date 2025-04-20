@@ -20,7 +20,7 @@ git clone https://github.com/Swawon/n2c.git
 Then run these commands to install system-wide:
 ```
 sudo mv n2c /usr/share/n2c
-sudo cp /usr/share/n2c/n2c.bash /usr/local/bin/n2c
+sudo cp /usr/share/n2c/n2c /usr/local/bin/n2c
 sudo chmod +x /usr/local/bin/n2c
 ```
 Now you can use n2c from anywhere:
