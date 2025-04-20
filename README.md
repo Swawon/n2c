@@ -56,4 +56,4 @@ Description: Shows all running processes
 ## 👨‍💻 Author
 Created by Swawon Mondal
 You can show your support via:
-PayPal: ```lucknitelol@proton.me```
+PayPal: ```smalltutorialworld@gmail.com```
