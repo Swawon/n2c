@@ -11,11 +11,14 @@ n2c is a command-line AI agent made using crewai that translates your everyday l
 ✅ Default model: Gemini 1.5 Pro
 
 ## 📦 Installation
-You must have root access to move files to system directories.
+You must have crewai installed. The installation instructuions are given in their site.
+```https://docs.crewai.com/installation ``` 
 
 First clone the repository:
 ```
 git clone https://github.com/Swawon/n2c.git
+cd n2c
+crewai run #This command will create the python environment.
 ```
 Then run these commands to install system-wide:
 ```
