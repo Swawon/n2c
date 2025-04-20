@@ -54,6 +54,6 @@ Description: Shows all running processes
 [3] Cancel
 ```
 ## 👨‍💻 Author
-Created by Swawon Mondal
+Created by Swawon Mondal,
 You can show your support via:
 PayPal: ```smalltutorialworld@gmail.com```
