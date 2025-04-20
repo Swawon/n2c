@@ -46,8 +46,7 @@ The .env file should be located in the /usr/share/n2c/ directory.
 
 Its contents should look like this:
 
-```env
-Copy
-Edit
+env
+
 MODEL=gemini/gemini-1.5-pro
 GEMINI_API_KEY=your_gemini_api_key_here
